@@ -1,0 +1,69 @@
+# Archivos compilados de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos C compilados
+*.so
+
+# Archivos de distribución/packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Archivos de log y base de datos SQLite
+*.log
+db.sqlite3
+
+# Archivos de migraciones de Django
+#migrations/
+
+# Archivos de configuración local
+local_settings.py
+.env
+
+# Archivos de entorno virtual
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Archivos estáticos y de medios generados
+staticfiles/
+media/
+
+# Caché y archivos temporales
+*.tmp
+*.swp
+*~
+
+# Caché de pytest y mypy
+.cache/
+.mypy_cache/
+.dmypy.json
+
+# Configuraciones de IDEs y editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Otros archivos del sistema
+.DS_Store
+Thumbs.db
