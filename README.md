@@ -2,6 +2,8 @@
 
 Este proyecto es una API para la gestión de cursos utilizando Django y Django REST Framework.
 
+**Frontend:** Puedes visitar el repositorio del frontend en [https://github.com/al-2100/frontend-cursos](https://github.com/al-2100/frontend-cursos)
+
 ## Requisitos
 
 - Python 3.10+
