@@ -23,6 +23,7 @@ Este proyecto es una API para la gestión de cursos utilizando Django y Django R
 3. Configura las variables de entorno en el archivo `.env` (crea uno siguiendo el ejemplo):
    ```
    SECRET_KEY=django-insecure-^&m2xzyt&9b_0sj6ov7y4i%-tx6@kk5e2$6w+7e(u4w_@2(3wd
+   ALLOWED_HOSTS=localhost
    DEBUG=True
    DB_NAME=...
    DB_USER=...
@@ -37,6 +38,10 @@ Este proyecto es una API para la gestión de cursos utilizando Django y Django R
 5. Inicia el contenedor:
    ```
    docker run --env-file .env -p 8000:8000 backend-cursos
+   ```
+6. Crea un superusuario para acceder a los endpoints protegidos:
+   ```
+   docker exec -it <container_id> python manage.py createsuperuser
    ```
 
 ### Opción 2: Instalación sin Docker
@@ -59,6 +64,7 @@ Este proyecto es una API para la gestión de cursos utilizando Django y Django R
 4. Configura el archivo `.env` con las variables de entorno necesarias (ver el ejemplo):
    ```
    SECRET_KEY=...
+   ALLOWED_HOSTS=localhost
    DEBUG=True
    DB_NAME=...
    DB_USER=...
@@ -70,7 +76,11 @@ Este proyecto es una API para la gestión de cursos utilizando Django y Django R
    ```
    python manage.py migrate
    ```
-6. Ejecuta el servidor de desarrollo:
+6. Crea un superusuario para acceder a los endpoints protegidos:
+   ```
+   python manage.py createsuperuser
+   ```
+7. Ejecuta el servidor de desarrollo:
    ```
    python manage.py runserver
    ```
